@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .btn {
@@ -7,19 +8,25 @@ body {
     width: 200px;
     border-radius: 20%;
     border: 10px solid black;
-    margin: 2rem;
+    margin: 1rem;
+    cursor: pointer;
 }
 
 .btn-container {
    display: flex;
+   flex-direction: column;
+   align-items: center;
    justify-content: center;
-    align-items: centre;
-    flex-direction: column;
+   margin-top: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .yellow {
     background-color: #f99b45;
-
 }
 
 .red {
@@ -35,12 +42,9 @@ body {
 }
 
 .flash {
-    background-color: white;
+    background-color: white !important;
 }
 
 .userflash {
-    background-color: green;
+    background-color: green !important;
 }
-
-
-
