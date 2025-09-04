@@ -13,6 +13,8 @@ body {
 .btn-container {
    display: flex;
    justify-content: center;
+    align-items: centre;
+    flex-direction: column;
 }
 
 .yellow {
@@ -39,5 +41,6 @@ body {
 .userflash {
     background-color: green;
 }
+
 
 
