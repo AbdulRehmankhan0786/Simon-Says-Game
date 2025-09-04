@@ -10,7 +10,7 @@ body {
     margin: 2rem;
 }
 
-.btn-cont {
+.btn-container {
    display: flex;
    justify-content: center;
 }
@@ -39,4 +39,5 @@ body {
 .userflash {
     background-color: green;
 }
+
 
