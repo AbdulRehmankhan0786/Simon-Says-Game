@@ -1,44 +1,82 @@
 body { 
     text-align: center;
     overflow: hidden;
-    zoom: normal;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
 }
-.btn-cont{
+
+/* Start button style */
+#startBtn {
+    padding: 12px 25px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#startBtn:active {
+    background-color: #388e3c;
+    transform: scale(0.98);
+}
+
+.btn-cont {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
 }
-.btn{
+
+.btn {
     width: 200px;
     height: 200px;
     margin: 20px;
     border-radius: 20%;
     border: 0.2rem solid black;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
-.red{
+
+.red {
     background-color: rgb(245, 56, 56);
 }
-.red:active{
+.red:active {
     background-color: rgb(252, 20, 20);
 }
-.blue{
+
+.blue {
     background-color: royalblue;
 }
-.blue:active{
+.blue:active {
     background-color: rgb(14, 62, 209);
 }
-.green{
+
+.green {
     background-color: rgb(68, 255, 68);
 }
-.green:active{
+.green:active {
     background-color: rgb(29, 229, 29);
 }
-.purple{
+
+.purple {
     background-color: blueviolet;
 }
-.purple:active{
+.purple:active {
     background-color: rgb(115, 2, 221);
 }
 
-.flash{
-    background-color: white;
+.flash {
+    background-color: white !important;
+    box-shadow: 0 0 20px #fff;
 }
