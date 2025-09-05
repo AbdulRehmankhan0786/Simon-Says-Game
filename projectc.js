@@ -5,15 +5,16 @@ let btns = ["red", "blue", "green", "purple"];
 let started = false;
 let level = 0;  
 let h2 = document.querySelector("h2");
+let startBtn = document.querySelector("#startBtn");
 
-document.addEventListener("keypress", function () {
-    if (started == false) {
+startBtn.addEventListener("click", function () {
+    if (!started) {
         console.log("Game started");
         started = true;
-
+        level = 0;
         leveUp();
     }
-})
+});
 
 function btnFlash(btn) {
     btn.classList.add("flash");
@@ -53,16 +54,15 @@ function checkAnswer(idx) {
 function btnPress() {
     let btn = this;
     btnFlash(btn);
-    console.log(btn);
 
-    userColor = btn.getAttribute("id");
+    let userColor = btn.getAttribute("id");
     userSeq.push(userColor);
 
     checkAnswer(userSeq.length - 1);
 }
 
 let allBtns = document.querySelectorAll(".btn");
-for(btn of allBtns) {
+for (btn of allBtns) {
     btn.addEventListener("click", btnPress);
 }
 
@@ -70,6 +70,6 @@ function reset() {
     gameSeq = [];
     userSeq = [];
     started = false;
-    h2.innerHTML = `Game Over! Your score was ${level} <br>Press Any Key to Restart`;
+    h2.innerHTML = `Game Over! Your score was ${level} <br>Press Start button to Restart`;
     level = 0;
 }
